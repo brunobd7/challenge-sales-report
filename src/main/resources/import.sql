@@ -237,3 +237,17 @@ INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,58,48,5283.0
 INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,55,35,20474.0,'2021-07-05');
 INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,84,34,5787.0,'2021-07-01');
 INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,79,68,11976.0,'2021-06-27');
+
+
+-- SUMMARY QUERY
+SELECT tb_seller.name, SUM(tb_sales.amount)
+FROM tb_sales
+         INNER JOIN tb_seller on tb_sales.seller_id = tb_seller.id
+WHERE tb_sales.date between '2024-01-01' and '2024-12-31'
+GROUP BY tb_seller.name;
+
+-- REPORT QUERY
+SELECT sale.id, sale.date, sale.amount, seller.name
+FROM tb_sales sale
+    INNER JOIN tb_seller seller on seller.id=sale.seller_id
+WHERE sale.date between '2024-01-01' and '2024-12-31';
