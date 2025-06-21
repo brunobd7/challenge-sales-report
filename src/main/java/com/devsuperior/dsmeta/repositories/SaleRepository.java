@@ -1,11 +1,11 @@
 package com.devsuperior.dsmeta.repositories;
 
-import com.devsuperior.dsmeta.dto.SaleMinDTO;
+import com.devsuperior.dsmeta.dto.SaleReportDTO;
 import com.devsuperior.dsmeta.dto.SaleSummaryDTO;
-import org.springframework.data.domain.Page;
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import com.devsuperior.dsmeta.entities.Sale;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.time.LocalDate;
@@ -15,15 +15,16 @@ public interface SaleRepository extends JpaRepository<Sale, Long> {
 
     @Query(nativeQuery = true,
             value = """
-                    SELECT sale.id, sale.date, sale.amount, seller.name
+                    SELECT sale.id, CAST(sale.date as VARCHAR), sale.amount, seller.name sellerName
                     FROM tb_sales sale
                         INNER JOIN tb_seller seller on seller.id=sale.seller_id
                     WHERE
-                        seller.name like :sellerName 
-                            and sale.date between :initialDate and :finalDate
+                        sale.date between :initialDate and :finalDate
+                        and seller.name like concat('%',:sellerName,'%') ESCAPE '\'
                     
                     """)
-    List<Sale> querySalesReport(String sellerName, LocalDate initialDate, LocalDate finalDate);
+    Page<SaleReportDTO> querySalesReport(String sellerName, LocalDate initialDate, LocalDate finalDate,
+                                         Pageable pageable);
 
     @Query(nativeQuery = true,
             value = """

@@ -320,14 +320,15 @@ INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,79,68,11976.
 
 
 -- SUMMARY QUERY
--- SELECT tb_seller.name sellerName, SUM(tb_sales.amount) totalAmount
+-- SELECT tb_seller.name sellerName, CAST(SUM(tb_sales.amount) AS DOUBLE) amount
 -- FROM tb_sales
 --          INNER JOIN tb_seller on tb_sales.seller_id = tb_seller.id
--- WHERE tb_sales.date between '2024-01-01' and '2024-12-31'
+-- WHERE tb_sales.date between :initialDate and :finalDate
 -- GROUP BY tb_seller.name;
 
 -- REPORT QUERY
--- SELECT sale.id, sale.date, sale.amount, seller.name
+-- SELECT sale.id, sale.date, sale.amount, seller.name sellerName
 -- FROM tb_sales sale
---     INNER JOIN tb_seller seller on seller.id=sale.seller_id
--- WHERE sale.date between '2024-01-01' and '2024-12-31';
+--          INNER JOIN tb_seller seller on seller.id = sale.seller_id
+-- WHERE sale.date between '2024-01-01' and '2024-12-31'
+--   and seller.name like '%od%';
