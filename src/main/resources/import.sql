@@ -4,6 +4,86 @@ INSERT INTO tb_seller(name, email, phone) VALUES ('Padme', 'padme@gmail.com', '9
 INSERT INTO tb_seller(name, email, phone) VALUES ('Thor Odinson', 'thor@gmail.com', '997711148');
 INSERT INTO tb_seller(name, email, phone) VALUES ('Anakin', 'any@gmail.com', '844768748');
 
+
+-- Dados adicionais para tb_sales - Ano 2025
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,95,58,16750.0,'2025-01-05');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,67,42,12890.0,'2025-01-08');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,112,78,19450.0,'2025-01-12');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,89,65,14230.0,'2025-01-15');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,76,48,11680.0,'2025-01-18');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,143,89,22180.0,'2025-02-02');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,52,28,8940.0,'2025-02-05');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,98,71,17650.0,'2025-02-09');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,127,84,20330.0,'2025-02-12');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,61,35,9520.0,'2025-02-16');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,88,54,15420.0,'2025-03-03');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,74,46,13270.0,'2025-03-07');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,156,92,24580.0,'2025-03-10');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,103,67,18910.0,'2025-03-14');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,85,52,14760.0,'2025-03-18');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,119,76,21840.0,'2025-04-01');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,45,23,7650.0,'2025-04-05');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,91,63,16890.0,'2025-04-09');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,137,88,23420.0,'2025-04-12');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,69,41,12180.0,'2025-04-16');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,102,64,18350.0,'2025-05-04');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,58,34,10780.0,'2025-05-08');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,124,81,22670.0,'2025-05-11');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,96,58,16430.0,'2025-05-15');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,77,47,13890.0,'2025-05-19');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,84,51,14920.0,'2025-06-02');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,66,38,11540.0,'2025-06-06');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,148,95,26180.0,'2025-06-09');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,115,73,19850.0,'2025-06-13');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,92,56,15640.0,'2025-06-17');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,107,68,19780.0,'2025-07-01');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,73,44,12450.0,'2025-07-05');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,139,86,24320.0,'2025-07-08');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,81,49,14670.0,'2025-07-12');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,108,66,18290.0,'2025-07-16');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,125,79,22150.0,'2025-08-03');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,49,27,8320.0,'2025-08-07');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,93,61,17480.0,'2025-08-10');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,162,98,27540.0,'2025-08-14');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,87,53,15210.0,'2025-08-18');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,94,59,16890.0,'2025-09-02');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,71,43,12670.0,'2025-09-06');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,118,75,21430.0,'2025-09-09');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,105,67,18750.0,'2025-09-13');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,79,48,13540.0,'2025-09-17');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,131,83,23680.0,'2025-10-01');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,56,32,9890.0,'2025-10-05');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,101,69,19120.0,'2025-10-08');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,144,91,25470.0,'2025-10-12');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,98,61,17320.0,'2025-10-16');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,86,55,15780.0,'2025-11-03');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,63,39,11230.0,'2025-11-07');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,127,82,23110.0,'2025-11-10');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,99,64,17890.0,'2025-11-14');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,111,72,19650.0,'2025-11-18');
+
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,149,94,26340.0,'2025-12-01');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,68,41,12010.0,'2025-12-05');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,116,78,21790.0,'2025-12-08');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,133,85,24160.0,'2025-12-12');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,90,57,16480.0,'2025-12-16');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,104,66,18920.0,'2025-12-20');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,75,47,13450.0,'2025-12-23');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,158,99,27890.0,'2025-12-27');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (4,121,77,21570.0,'2025-12-29');
+INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (5,82,51,14830.0,'2025-12-31');
+
+-- Dados base de origem no fork
 INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (1,121,67,18196.0,'2024-06-16');
 INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (2,26,14,4255.0,'2024-06-14');
 INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,55,42,13249.0,'2024-06-14');
@@ -240,14 +320,14 @@ INSERT INTO tb_sales(seller_id,visited,deals,amount,date) VALUES (3,79,68,11976.
 
 
 -- SUMMARY QUERY
-SELECT tb_seller.name, SUM(tb_sales.amount)
-FROM tb_sales
-         INNER JOIN tb_seller on tb_sales.seller_id = tb_seller.id
-WHERE tb_sales.date between '2024-01-01' and '2024-12-31'
-GROUP BY tb_seller.name;
+-- SELECT tb_seller.name sellerName, SUM(tb_sales.amount) totalAmount
+-- FROM tb_sales
+--          INNER JOIN tb_seller on tb_sales.seller_id = tb_seller.id
+-- WHERE tb_sales.date between '2024-01-01' and '2024-12-31'
+-- GROUP BY tb_seller.name;
 
 -- REPORT QUERY
-SELECT sale.id, sale.date, sale.amount, seller.name
-FROM tb_sales sale
-    INNER JOIN tb_seller seller on seller.id=sale.seller_id
-WHERE sale.date between '2024-01-01' and '2024-12-31';
+-- SELECT sale.id, sale.date, sale.amount, seller.name
+-- FROM tb_sales sale
+--     INNER JOIN tb_seller seller on seller.id=sale.seller_id
+-- WHERE sale.date between '2024-01-01' and '2024-12-31';

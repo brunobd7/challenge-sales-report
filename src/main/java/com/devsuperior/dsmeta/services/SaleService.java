@@ -1,8 +1,11 @@
 package com.devsuperior.dsmeta.services;
 
 import java.time.LocalDate;
+import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
+import com.devsuperior.dsmeta.dto.SaleSummaryDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,5 +32,16 @@ public class SaleService {
 	public SaleMinDTO buildSalesReport(LocalDate initialDate, LocalDate finalDate, String sellerName){
 
 		return null;
+	}
+
+	public List<SaleSummaryDTO> buildSalesSummary(LocalDate initialDate, LocalDate finalDate){
+
+		if(Objects.isNull(finalDate))
+			finalDate = LocalDate.now();
+
+		if(Objects.isNull(initialDate))
+			initialDate = finalDate.minusYears(1L);
+
+		return repository.querySalesSummary(initialDate, finalDate);
 	}
 }
