@@ -20,7 +20,7 @@ public interface SaleRepository extends JpaRepository<Sale, Long> {
                         INNER JOIN tb_seller seller on seller.id=sale.seller_id
                     WHERE
                         sale.date between :initialDate and :finalDate
-                        and seller.name like concat('%',:sellerName,'%') ESCAPE '\'
+                        and UPPER(seller.name) like concat('%',UPPER(:sellerName),'%') ESCAPE '\'
                     
                     """)
     Page<SaleReportDTO> querySalesReport(String sellerName, LocalDate initialDate, LocalDate finalDate,
